@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title><center>AMAZON PRODUCT CLASSFICATION App</center></title>
+    
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("a.png");
+
+    /* Full height */
+    height: 40%; 
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+}
+</style>
+</head>
+    
+    
+<body bgcolor = #FFEBCD>
+ 
+    <h1> <center> AMAZON PRODUCT CLASSIFICATION </center> </h1>
+    <img src="a.png"> 
+<!--<div class="bg"></div>-->
+
+<form action = "/getdelay" method="POST">
+    <p> <center>product:<input name="title" type ="text"/> </center></p>
+    <p> <center> <input type ="submit" value="submit" /> </center> </p>
+</form>
+
+    <h3> <center> Prediction: {{ prediction }} </center></h3>
+
+
+</body>
+</html>
+
+
