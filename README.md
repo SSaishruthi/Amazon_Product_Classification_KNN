@@ -18,13 +18,13 @@ Data PreProcessing
   
 Categorization using KNN
 
-● Dataset is split into 80 and 20 percent using random-state as 42
-● Product title of entire dataset is vectorized using TF IDF Vectorizer with l2-normalization
+- Dataset is split into 80 and 20 percent using random-state as 42
+- Product title of entire dataset is vectorized using TF IDF Vectorizer with l2-normalization
   and ngram as (1,2)
-● Using fit_transform and transform, both training and test data are vectorized
-● Cosine similarity is found between train and test vector
-● Trained input models are pickled along with category path for UI
-● KNN is implemented. Based on cosine similarity value, top three category paths are
+- Using fit_transform and transform, both training and test data are vectorized
+- Cosine similarity is found between train and test vector
+- Trained input models are pickled along with category path for UI
+- KNN is implemented. Based on cosine similarity value, top three category paths are
   retrieved and displayed on interface created using flask and HTML.
   
   RESULT
